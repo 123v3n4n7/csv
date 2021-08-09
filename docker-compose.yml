@@ -1,0 +1,14 @@
+version: '3.1'
+
+volumes:
+  pg_project:
+
+services:
+  web:
+    build:
+      context: ./
+      dockerfile: dockerfile
+    volumes:
+      - ./:/docker/
+    ports:
+      - 8000:8000

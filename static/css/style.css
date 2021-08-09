@@ -1,0 +1,148 @@
+body {
+    margin: 20px;
+	padding: 0;
+}
+button {
+	display: inline-block;
+	*display: inline;
+	padding: 3px 10px;
+	margin-bottom: 0;
+	*margin-left: .3em;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 20px;
+	*line-height: 20px;
+	color: #444444;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f1f1f1;
+	*background-color: #f1f1f1;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f8), to(#f1f1f1));
+	background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: -o-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-image: linear-gradient(to bottom, #f8f8f8, #f1f1f1);
+	background-image: -moz-linear-gradient(top, #f8f8f8, #f1f1f1);
+	background-repeat: repeat-x;
+	border: 1px solid #cccccc;
+	*border: 0;
+	-webkit-border-radius: 2px;
+	 -moz-border-radius: 2px;
+		  border-radius: 2px;
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#f1f1f1', GradientType=0);
+	*zoom: 1;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
+	 -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
+		  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+	background-color: #e5e5e5;
+	background-image: none;
+	filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+button:active {
+	-webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+	 -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+		  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+	background-color: #e5e5e5;
+	*background-color: #e5e5e5;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dddddd), to(#e5e5e5));
+	background-image: -webkit-linear-gradient(top, #dddddd, #e5e5e5);
+	background-image: -o-linear-gradient(top, #dddddd, #e5e5e5);
+	background-image: linear-gradient(to bottom, #dddddd, #e5e5e5);
+	background-image: -moz-linear-gradient(top, #dddddd, #e5e5e5);
+	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#dddddd', endColorstr='#e5e5e5', GradientType=0);
+	}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  margin-right: 5px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+
+table {
+    width: 100%; /*Ширина таблицы*/
+    margin-bottom: 18px; /*Отступ снизу от таблицы*/
+    padding: 0; /*Отступы внутри таблицы*/
+    font-size: 13px; /*Размер шрифта*/
+    border: 1px solid #dddddd; /*Граница таблицы*/
+    border-spacing: 0; /*Отступы между границами ячеек*/
+    border-collapse: separate; /*Границы ячеек не склеиваются*/
+	-webkit-border-radius: 5px; /*Радиус скругления углов у таблицы Safari, Chrome*/
+    -moz-border-radius: 5px; /*Радиус скругления углов у таблицы Mozilla*/
+    border-radius: 5px; /*Радиус скругления углов у таблицы*/
+    color: #666666; /*Цвет текста в таблице*/
+	font-family: Arial; /*Семейство шрифтов*/
+}
+
+table th, table td {
+    padding: 10px 10px 9px; /*Отступы внутри ячеек*/
+    line-height: 18px; /*Межстрочный интервал*/
+    text-align: left; /*Выравнивание текста по левому краю*/
+}
+
+table th {
+    padding-top: 9px; /*Отступы внутри ячеек*/
+    font-weight: bold; /*Установка жирного начертания шрифта*/
+    vertical-align: middle; /*Выравнивание по вертикали. Текст находится по середине*/
+    color: black; /*Черный цвет в ячейках заголовков таблицы*/
+}
+
+table td {
+    vertical-align: top; /*Выравнивание содержимого ячейки по верхнему краю*/
+    border-top: 1px solid #ddd; /*Верхняя граница ячейки*/
+}
+
+table th+th,table td+td,table th+td {
+    border-left: 1px solid #ddd; /*Стиль для левой границы между двумя ячейками*/
+}
+
+table thead tr:first-child th:first-child, /*Первая строка первая ячейка в заголовке таблицы*/
+table tbody tr:first-child td:first-child /*Первая строка первая ячейка в теле таблицы*/{
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+    border-radius: 5px 0 0 0;
+}
+
+table thead tr:first-child th:last-child, /*Первая строка последняя ячейка в заголовке таблицы*/
+table tbody tr:first-child td:last-child /*Первая строка последняя ячейка в теле таблицы*/ {
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+}
+
+table tbody tr:last-child td:first-child  /*Последняя строка первая ячейка в теле таблицы*/ {
+    -webkit-border-radius: 0 0 0 5px;
+    -moz-border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px;
+}
+
+table tbody tr:last-child td:last-child  /*Последняя строка последняя ячейка в теле таблицы*/{
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+
+table tr:hover {
+    background-color: #f2f2f2; /*Цвет строки при наведении курсора мыши*/
+}
+
+.icon-chevron-left {
+  background-position: -432px -72px;
+}
+
+.icon-chevron-right {
+  background-position: -456px -72px;
+}
